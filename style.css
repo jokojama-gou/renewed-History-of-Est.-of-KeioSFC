@@ -1,0 +1,13 @@
+img {
+    float:  inline-start;
+    margin: 0 1em 1em 0;
+    max-width: 300px;
+    border-radius: 2px;
+  }
+  
+  
+#top_image{
+ float: initial;   
+ width: 200px;
+ height: 150px;
+}
