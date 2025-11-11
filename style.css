@@ -11,3 +11,12 @@ img {
  width: 200px;
  height: 150px;
 }
+
+
+sl-details img {
+  float: none;      
+  display: block;     
+  max-width: 100%;    
+  height: auto;        
+  margin: 1em 0;
+}
