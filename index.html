@@ -1,5 +1,104 @@
 <!DOCTYPE html>
 <html>
+
+
+<!--
+
+
+めも。tailind cssやsholaceからもたちきる。jsもけす。これで、100年後とかもただしく表示されるようになる。
+<head>
+  <style>
+    /* 基本スタイル (変更なし) */
+    details {
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 8px;
+      /* ★追加: overflowを隠す */
+      overflow: hidden;
+    }
+    summary {
+      font-weight: bold;
+      padding: 10px;
+      cursor: pointer;
+      background-color: #f4f4f4;
+    }
+    details[open] summary {
+      background-color: #eee;
+    }
+    
+    /* ▼▼ アニメーションのための追加スタイル ▼▼ */
+
+    /* * 1. summary以外の部分を囲むラッパー(div)をgridにする
+     * ここでは .details-content をラッパーとします。
+     */
+    .details-content {
+      /* ★変更: gridコンテナにする */
+      display: grid;
+      
+      /* ★重要: 閉じた状態 (0fr = 0フレーム) */
+      grid-template-rows: 0fr;
+      
+      /* ★重要: 変化にアニメーションを適用 */
+      transition: grid-template-rows 0.3s ease-out;
+      
+      /* (以前のスタイル) */
+      padding: 0 10px; /* 上下のpaddingはgridで制御するので左右のみに */
+      border-top: 1px solid #ccc;
+    }
+
+    /* * 2. detailsが開いた[open]状態のとき、
+     * .details-content の高さを 1fr (1フレーム = 自動の高さ) にする
+     */
+    details[open] .details-content {
+      /* ★重要: 開いた状態 */
+      grid-template-rows: 1fr;
+      
+      /* 開いたときだけpaddingを戻す */
+      padding: 10px 10px;
+    }
+    
+    /* * 3. アニメーションがきれいに動くよう、
+     * コンテンツ本体に overflow: hidden をかける
+     * ( .details-content の「子要素」が必要)
+     */
+     .details-content > div {
+       overflow: hidden;
+     }
+
+  </style>
+</head>
+<body>
+
+  <h3>滑らかに開閉するアコーディオン</h3>
+
+  <details>
+    <summary>見出し 1（ここをクリック）</summary>
+    <div class="details-content">
+      <div>
+        <p>ここに隠しておきたい内容を書きます。</p>
+        <p>ぬるっと開閉します。</p>
+      </div>
+    </div>
+  </details>
+
+  <details>
+    <summary>見出し 2</summary>
+    <div class="details-content">
+      <div>
+        <p>別の内容です。</p>
+        <ul>
+          <li>リスト</li>
+          <li>なども</li>
+          <li>OKです</li>
+        </ul>
+      </div>
+    </div>
+  </details>
+
+</body>
+
+
+-->
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -316,6 +415,7 @@
   <div slot="summary" > <p class="text-xl">SFC開設初日</p></div>
   <di>
   <img src="12-5kangeikai-w200.jpg">
+
  <p>
   入学式の翌日はSFCでのガイダンスである。SFCの戸外行事は必ず晴れるというジンクスを皆さんはご存知だろうか。前日はどしゃぶりでも、当日は必ず晴れる。確率は9割以上である。私が記憶する限り、はずれたのはたった一度。一期生が卒業する年の七夕祭だけ。この夜だけはまさに英語で言う「犬猫の雨」で、私もずぶぬれになって、一期生たちと最後の盆踊りを踊った。ただし、今でもあれは「自然の雨ではない」と思っている。雨なんて、どこからでも、人間の心の中からでも降るものだ。
   
